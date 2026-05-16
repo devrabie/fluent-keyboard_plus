@@ -105,6 +105,32 @@ InlineKeyboardButton::make('Login')
     ->loginUrl(['url' => 'https://example.com']);
 ```
 
+You can also style the buttons and add custom emojis:
+
+```php
+InlineKeyboardMarkup::make()
+    ->row([
+        InlineKeyboardButton::make('New User')
+            ->iconCustomEmojiId('5877530150345641603')
+            ->style('primary')
+            ->callbackData('add_user'),
+        InlineKeyboardButton::make('Search')
+            ->iconCustomEmojiId('5942826671290715541')
+            ->style('primary')
+            ->callbackData('search')
+    ])
+    ->row([
+        InlineKeyboardButton::make('Block')
+            ->iconCustomEmojiId('5922712343011135025')
+            ->style('danger')
+            ->callbackData('block'),
+        InlineKeyboardButton::make('Verify')
+            ->iconCustomEmojiId('5951665890079544884')
+            ->style('success')
+            ->callbackData('verify')
+    ]);
+```
+
 To find out which fields are available have a look at the [Bot API documentation](https://core.telegram.org/bots/api).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
