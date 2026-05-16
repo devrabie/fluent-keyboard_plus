@@ -1,9 +1,9 @@
 <div id="top"></div>
 
-[![Version][version]](https://packagist.org/packages/php-telegram-bot/fluent-keyboard)
+[![Version][version]](https://packagist.org/packages/devrabie/fluent-keyboard)
 ![PHP Version][php-version]
 [![Bot API][bot-api-shield]](https://core.telegram.org/bots/api#january-31-2022)
-[![Tests][tests-shield]](https://github.com/php-telegram-bot/fluent-keyboard/actions/workflows/tests.yaml)
+[![Tests][tests-shield]](https://github.com/devrabie/fluent-keyboard/actions/workflows/tests.yaml)
 
 
 <!-- TABLE OF CONTENTS -->
@@ -36,7 +36,7 @@
 Install the package using composer:
 
 ```shell
-composer require php-telegram-bot/fluent-keyboard 
+composer require devrabie/fluent-keyboard
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -243,10 +243,10 @@ $pollButton = new KeyboardButtonPollType([
 ]);
 ```
 
-[tests-shield]: https://img.shields.io/github/workflow/status/php-telegram-bot/fluent-keyboard/Tests?label=Tests&style=for-the-badge
+[tests-shield]: https://img.shields.io/github/workflow/status/devrabie/fluent-keyboard/Tests?label=Tests&style=for-the-badge
 
 [bot-api-shield]: https://img.shields.io/badge/Bot%20API-5.7%20(Jan%202022)-%232a9ed6?style=for-the-badge
 
-[php-version]: https://img.shields.io/packagist/php-v/php-telegram-bot/fluent-keyboard?style=for-the-badge
+[php-version]: https://img.shields.io/packagist/php-v/devrabie/fluent-keyboard?style=for-the-badge
 
-[version]: https://img.shields.io/packagist/v/php-telegram-bot/fluent-keyboard?color=orange&label=Version&style=for-the-badge
+[version]: https://img.shields.io/packagist/v/devrabie/fluent-keyboard?color=orange&label=Version&style=for-the-badge
