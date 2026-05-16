@@ -1,5 +1,5 @@
 {
-    "name": "php-telegram-bot/fluent-keyboard",
+    "name": "devrabie/fluent-keyboard",
     "description": "Fluent Keyboard builder for ReplyKeyboardMarkup and InlineKeyboardMarkup.",
     "keywords": ["telegram", "bot", "api", "fluent", "keyboard", "builder"],
     "type": "library",
