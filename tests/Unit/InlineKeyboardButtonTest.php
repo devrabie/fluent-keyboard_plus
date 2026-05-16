@@ -18,8 +18,12 @@ it('can set known fields', function () {
         ->callbackData('Callback Data')
         ->switchInlineQuery('Switch Inline Query')
         ->switchInlineQueryCurrentChat('Switch Inline Query Current Chat')
+        ->switchInlineQueryChosenChat(['query' => 'Query'])
         ->callbackGame('Callback Game')
-        ->pay();
+        ->pay()
+        ->copyText('Copy Text')
+        ->iconCustomEmojiId('EmojiId')
+        ->style('primary');
 
     expect($button)->toMatchEntity([
         'text'                             => 'Text',
@@ -28,8 +32,12 @@ it('can set known fields', function () {
         'callback_data'                    => 'Callback Data',
         'switch_inline_query'              => 'Switch Inline Query',
         'switch_inline_query_current_chat' => 'Switch Inline Query Current Chat',
+        'switch_inline_query_chosen_chat'  => ['query' => 'Query'],
         'callback_game'                    => 'Callback Game',
         'pay'                              => true,
+        'copy_text'                        => ['text' => 'Copy Text'],
+        'icon_custom_emoji_id'             => 'EmojiId',
+        'style'                            => 'primary',
     ]);
 });
 
