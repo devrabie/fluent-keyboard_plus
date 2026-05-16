@@ -10,6 +10,7 @@ use PhpTelegramBot\FluentKeyboard\Button;
  * @method self callbackData(string $callback_data)
  * @method self switchInlineQuery(string $switch_inline_query)
  * @method self switchInlineQueryCurrentChat(string $switch_inline_query_current_chat)
+ * @method self switchInlineQueryChosenChat(array $switch_inline_query_chosen_chat)
  * @method self callbackGame(string $callback_game)
  * @method self pay(bool $pay = true)
  */
@@ -53,6 +54,19 @@ class InlineKeyboardButton extends Button
         }
 
         $this->data['login_url'] = $login_url;
+
+        return $this;
+    }
+
+    public function copyText(array|string $copy_text): self
+    {
+        if (is_string($copy_text)) {
+            $copy_text = [
+                'text' => $copy_text,
+            ];
+        }
+
+        $this->data['copy_text'] = $copy_text;
 
         return $this;
     }

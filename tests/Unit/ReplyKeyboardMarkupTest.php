@@ -13,6 +13,7 @@ it('creates valid JSON', function () {
 
 it('can set known fields', function () {
     $keyboard = ReplyKeyboardMarkup::make()
+        ->isPersistent()
         ->inputFieldPlaceholder('Placeholder')
         ->oneTimeKeyboard()
         ->resizeKeyboard()
@@ -20,6 +21,7 @@ it('can set known fields', function () {
 
     expect($keyboard)->toMatchEntity([
         'keyboard'                => [[]],
+        'is_persistent'           => true,
         'input_field_placeholder' => 'Placeholder',
         'one_time_keyboard'       => true,
         'resize_keyboard'         => true,

@@ -6,6 +6,8 @@ use PhpTelegramBot\FluentKeyboard\Button;
 
 /**
  * @method self text(string $text)
+ * @method self requestUsers(array $request_users)
+ * @method self requestChat(array $request_chat)
  * @method self requestContact(bool $request_contact = true)
  * @method self requestLocation(bool $request_location = true)
  * @method self requestPoll(KeyboardButtonPollType|array $request_poll = [])

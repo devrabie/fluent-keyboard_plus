@@ -11,15 +11,19 @@ it('creates valid JSON', function () {
 it('can set known fields', function () {
     $button = KeyboardButton::make()
         ->text('Text')
+        ->requestUsers(['request_id' => 1])
+        ->requestChat(['request_id' => 2])
         ->requestContact()
         ->requestLocation()
         ->requestPoll();
 
     expect($button)->toMatchEntity([
-        'text'             => 'Text',
-        'request_contact'  => true,
-        'request_location' => true,
-        'request_poll'     => []
+        'text'                => 'Text',
+        'request_users'       => ['request_id' => 1],
+        'request_chat'        => ['request_id' => 2],
+        'request_contact'     => true,
+        'request_location'    => true,
+        'request_poll'        => [],
     ]);
 });
 
