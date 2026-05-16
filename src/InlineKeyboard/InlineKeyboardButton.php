@@ -13,6 +13,8 @@ use PhpTelegramBot\FluentKeyboard\Button;
  * @method self switchInlineQueryChosenChat(array $switch_inline_query_chosen_chat)
  * @method self callbackGame(string $callback_game)
  * @method self pay(bool $pay = true)
+ * @method self iconCustomEmojiId(string $icon_custom_emoji_id)
+ * @method self style(string $style)
  */
 class InlineKeyboardButton extends Button
 {

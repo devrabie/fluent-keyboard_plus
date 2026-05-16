@@ -11,6 +11,9 @@ use PhpTelegramBot\FluentKeyboard\Button;
  * @method self requestContact(bool $request_contact = true)
  * @method self requestLocation(bool $request_location = true)
  * @method self requestPoll(KeyboardButtonPollType|array $request_poll = [])
+ * @method self requestManagedBot(array $request_managed_bot)
+ * @method self iconCustomEmojiId(string $icon_custom_emoji_id)
+ * @method self style(string $style)
  */
 class KeyboardButton extends Button
 {

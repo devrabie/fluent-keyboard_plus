@@ -15,7 +15,10 @@ it('can set known fields', function () {
         ->requestChat(['request_id' => 2])
         ->requestContact()
         ->requestLocation()
-        ->requestPoll();
+        ->requestPoll()
+        ->requestManagedBot(['request_id' => 3])
+        ->iconCustomEmojiId('EmojiId')
+        ->style('primary');
 
     expect($button)->toMatchEntity([
         'text'                => 'Text',
@@ -24,6 +27,9 @@ it('can set known fields', function () {
         'request_contact'     => true,
         'request_location'    => true,
         'request_poll'        => [],
+        'request_managed_bot' => ['request_id' => 3],
+        'icon_custom_emoji_id' => 'EmojiId',
+        'style'               => 'primary',
     ]);
 });
 

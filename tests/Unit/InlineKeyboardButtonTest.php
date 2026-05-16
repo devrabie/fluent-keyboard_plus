@@ -21,7 +21,9 @@ it('can set known fields', function () {
         ->switchInlineQueryChosenChat(['query' => 'Query'])
         ->callbackGame('Callback Game')
         ->pay()
-        ->copyText('Copy Text');
+        ->copyText('Copy Text')
+        ->iconCustomEmojiId('EmojiId')
+        ->style('primary');
 
     expect($button)->toMatchEntity([
         'text'                             => 'Text',
@@ -34,6 +36,8 @@ it('can set known fields', function () {
         'callback_game'                    => 'Callback Game',
         'pay'                              => true,
         'copy_text'                        => ['text' => 'Copy Text'],
+        'icon_custom_emoji_id'             => 'EmojiId',
+        'style'                            => 'primary',
     ]);
 });
 
