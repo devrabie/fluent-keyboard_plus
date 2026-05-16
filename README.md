@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Version][version]](https://packagist.org/packages/devrabie/fluent-keyboard)
+[![Version][version]](https://packagist.org/packages/devrabie/fluent-keyboard_plus)
 ![PHP Version][php-version]
 [![Bot API][bot-api-shield]](https://core.telegram.org/bots/api#january-31-2022)
 [![Tests][tests-shield]](https://github.com/devrabie/fluent-keyboard/actions/workflows/tests.yaml)
@@ -36,7 +36,7 @@
 Install the package using composer:
 
 ```shell
-composer require devrabie/fluent-keyboard
+ composerd devrabie/fluent-keyboard_plus 
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
