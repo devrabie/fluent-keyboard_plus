@@ -1,5 +1,5 @@
 {
-    "name": "devrabie/fluent-keyboard",
+    "name": "devrabie/fluent-keyboard_plus",
     "description": "Fluent Keyboard builder for ReplyKeyboardMarkup and InlineKeyboardMarkup.",
     "keywords": ["telegram", "bot", "api", "fluent", "keyboard", "builder"],
     "type": "library",
